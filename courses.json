@@ -1,0 +1,37 @@
+{
+  "CS101": {
+    "name": "Introduction to Computer Science",
+    "exam_date": "2026-08-15",
+    "credits": 4,
+    "description": "Covers fundamentals of computing, algorithms, data structures, and programming basics.",
+    "key_topics": ["Algorithms", "Data Structures", "Programming Fundamentals", "Complexity Analysis", "Recursion"]
+  },
+  "MATH201": {
+    "name": "Linear Algebra",
+    "exam_date": "2026-08-10",
+    "credits": 3,
+    "description": "Study of vectors, matrices, linear transformations, eigenvalues, and vector spaces.",
+    "key_topics": ["Matrices", "Vector Spaces", "Eigenvalues", "Linear Transformations", "Determinants"]
+  },
+  "PHYS150": {
+    "name": "Classical Mechanics",
+    "exam_date": "2026-08-20",
+    "credits": 4,
+    "description": "Newton's laws, energy, momentum, rotational dynamics, and oscillations.",
+    "key_topics": ["Newton's Laws", "Energy Conservation", "Momentum", "Rotational Motion", "Oscillations"]
+  },
+  "ENG102": {
+    "name": "Academic Writing",
+    "exam_date": "2026-08-05",
+    "credits": 2,
+    "description": "Develops skills in essay structure, argumentation, research methods, and citation.",
+    "key_topics": ["Essay Structure", "Argumentation", "Research Methods", "Citation Styles", "Editing"]
+  },
+  "BIO110": {
+    "name": "Cell Biology",
+    "exam_date": "2026-08-18",
+    "credits": 3,
+    "description": "Cell structure, organelles, metabolism, cell division, and molecular biology basics.",
+    "key_topics": ["Cell Structure", "Metabolism", "DNA Replication", "Cell Division", "Membrane Transport"]
+  }
+}
