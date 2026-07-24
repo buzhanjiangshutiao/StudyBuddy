@@ -1,9 +1,20 @@
 import json
 import math
+import os
 from datetime import date, datetime
 
 import streamlit as st
 from strands import Agent, tool
+
+# ---------------------------------------------------------------------------
+# Load AWS credentials from Streamlit Secrets (for cloud deployment)
+# ---------------------------------------------------------------------------
+if hasattr(st, "secrets") and "aws" in st.secrets:
+    os.environ["AWS_ACCESS_KEY_ID"] = st.secrets["aws"]["AWS_ACCESS_KEY_ID"]
+    os.environ["AWS_SECRET_ACCESS_KEY"] = st.secrets["aws"]["AWS_SECRET_ACCESS_KEY"]
+    if "AWS_SESSION_TOKEN" in st.secrets["aws"]:
+        os.environ["AWS_SESSION_TOKEN"] = st.secrets["aws"]["AWS_SESSION_TOKEN"]
+    os.environ["AWS_DEFAULT_REGION"] = st.secrets["aws"].get("AWS_DEFAULT_REGION", "us-east-1")
 
 # ---------------------------------------------------------------------------
 # Load course data
